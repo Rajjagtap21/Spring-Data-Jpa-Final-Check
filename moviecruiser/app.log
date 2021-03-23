@@ -1,0 +1,272 @@
+2021-03-23 10:26:11.331  INFO 13444 --- [restartedMain] c.c.m.MoviecruiserApplication            : Starting MoviecruiserApplication using Java 15.0.1 on DESKTOP-43RH9JJ with PID 13444 (G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser\target\classes started by rajag in G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser)
+2021-03-23 10:26:11.332 DEBUG 13444 --- [restartedMain] c.c.m.MoviecruiserApplication            : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-23 10:26:11.333  INFO 13444 --- [restartedMain] c.c.m.MoviecruiserApplication            : No active profile set, falling back to default profiles: default
+2021-03-23 10:26:11.369  INFO 13444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-23 10:26:11.643  INFO 13444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-23 10:26:11.676  INFO 13444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2021-03-23 10:26:11.909  INFO 13444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-23 10:26:11.941  INFO 13444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-23 10:26:12.027  INFO 13444 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-23 10:26:12.096  INFO 13444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-23 10:26:12.249  INFO 13444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-23 10:26:12.260  INFO 13444 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-03-23 10:26:12.634 DEBUG 13444 --- [restartedMain] org.hibernate.SQL                        : create table hibernate_sequence (next_val bigint) engine=InnoDB
+2021-03-23 10:26:12.678 DEBUG 13444 --- [restartedMain] org.hibernate.SQL                        : insert into hibernate_sequence values ( 1 )
+2021-03-23 10:26:12.689 DEBUG 13444 --- [restartedMain] org.hibernate.SQL                        : create table movie (id bigint not null, active bit, box_office varchar(255), date_of_launch datetime, genre varchar(255), has_teaser bit, title varchar(255), primary key (id)) engine=InnoDB
+2021-03-23 10:26:12.713  INFO 13444 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-23 10:26:12.718  INFO 13444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 10:26:12.740  INFO 13444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-23 10:26:12.996  INFO 13444 --- [restartedMain] c.c.m.MoviecruiserApplication            : Started MoviecruiserApplication in 2.001 seconds (JVM running for 2.577)
+2021-03-23 10:26:12.998  INFO 13444 --- [restartedMain] c.c.m.MoviecruiserApplication            : Inside main
+2021-03-23 10:26:25.301  INFO 13444 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 10:26:25.385 DEBUG 13444 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_, movie0_.active as active2_0_, movie0_.box_office as box_offi3_0_, movie0_.date_of_launch as date_of_4_0_, movie0_.genre as genre5_0_, movie0_.has_teaser as has_teas6_0_, movie0_.title as title7_0_ from movie movie0_
+2021-03-23 10:26:25.393  INFO 13444 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 10:26:58.145  INFO 13444 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 10:26:58.152 DEBUG 13444 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_0_, movie0_.active as active2_0_0_, movie0_.box_office as box_offi3_0_0_, movie0_.date_of_launch as date_of_4_0_0_, movie0_.genre as genre5_0_0_, movie0_.has_teaser as has_teas6_0_0_, movie0_.title as title7_0_0_ from movie movie0_ where movie0_.id=?
+2021-03-23 10:26:58.154 TRACE 13444 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-03-23 10:26:58.165  INFO 13444 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 10:26:58.168  INFO 13444 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-23 10:26:58.174  INFO 13444 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-23 10:28:52.909  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : Starting MoviecruiserApplication using Java 15.0.1 on DESKTOP-43RH9JJ with PID 14604 (G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser\target\classes started by rajag in G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser)
+2021-03-23 10:28:52.911 DEBUG 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-23 10:28:52.912  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : No active profile set, falling back to default profiles: default
+2021-03-23 10:28:52.947  INFO 14604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-23 10:28:53.215  INFO 14604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-23 10:28:53.247  INFO 14604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2021-03-23 10:28:53.478  INFO 14604 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-23 10:28:53.512  INFO 14604 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-23 10:28:53.599  INFO 14604 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-23 10:28:53.668  INFO 14604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-23 10:28:53.801  INFO 14604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-23 10:28:53.812  INFO 14604 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-03-23 10:28:54.211  INFO 14604 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-23 10:28:54.218  INFO 14604 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 10:28:54.241  INFO 14604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-23 10:28:54.504  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : Started MoviecruiserApplication in 1.82 seconds (JVM running for 2.401)
+2021-03-23 10:28:54.506  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : Inside main
+2021-03-23 10:28:58.494  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 10:28:58.574 DEBUG 14604 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_, movie0_.active as active2_0_, movie0_.box_office as box_offi3_0_, movie0_.date_of_launch as date_of_4_0_, movie0_.genre as genre5_0_, movie0_.has_teaser as has_teas6_0_, movie0_.title as title7_0_ from movie movie0_ where movie0_.active=1
+2021-03-23 10:28:58.581  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 10:30:00.366  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 10:30:00.372 DEBUG 14604 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_, movie0_.active as active2_0_, movie0_.box_office as box_offi3_0_, movie0_.date_of_launch as date_of_4_0_, movie0_.genre as genre5_0_, movie0_.has_teaser as has_teas6_0_, movie0_.title as title7_0_ from movie movie0_
+2021-03-23 10:30:00.374  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 10:36:04.590  INFO 14604 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 10:36:04.598 DEBUG 14604 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_0_, movie0_.active as active2_0_0_, movie0_.box_office as box_offi3_0_0_, movie0_.date_of_launch as date_of_4_0_0_, movie0_.genre as genre5_0_0_, movie0_.has_teaser as has_teas6_0_0_, movie0_.title as title7_0_0_ from movie movie0_ where movie0_.id=?
+2021-03-23 10:36:04.600 TRACE 14604 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-03-23 10:36:04.613  INFO 14604 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 10:36:04.615  INFO 14604 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-23 10:36:04.620  INFO 14604 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-23 11:13:17.256  INFO 4048 --- [restartedMain] c.c.m.MoviecruiserApplication            : Starting MoviecruiserApplication using Java 15.0.1 on DESKTOP-43RH9JJ with PID 4048 (G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser\target\classes started by rajag in G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser)
+2021-03-23 11:13:17.261 DEBUG 4048 --- [restartedMain] c.c.m.MoviecruiserApplication            : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-23 11:13:17.261  INFO 4048 --- [restartedMain] c.c.m.MoviecruiserApplication            : No active profile set, falling back to default profiles: default
+2021-03-23 11:13:17.296  INFO 4048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-23 11:13:17.573  INFO 4048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-23 11:13:17.605  INFO 4048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2021-03-23 11:13:17.842  INFO 4048 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-23 11:13:17.874  INFO 4048 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-23 11:13:17.959  INFO 4048 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-23 11:13:18.030  INFO 4048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-23 11:13:18.165  INFO 4048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-23 11:13:18.176  INFO 4048 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-03-23 11:13:18.555  INFO 4048 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-23 11:13:18.560  INFO 4048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 11:13:18.582  INFO 4048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-23 11:13:18.839  INFO 4048 --- [restartedMain] c.c.m.MoviecruiserApplication            : Started MoviecruiserApplication in 1.807 seconds (JVM running for 2.378)
+2021-03-23 11:13:18.841  INFO 4048 --- [restartedMain] c.c.m.MoviecruiserApplication            : Inside main
+2021-03-23 11:13:27.850  INFO 4048 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 11:13:27.879 DEBUG 4048 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_0_, movie0_.active as active2_0_0_, movie0_.box_office as box_offi3_0_0_, movie0_.date_of_launch as date_of_4_0_0_, movie0_.genre as genre5_0_0_, movie0_.has_teaser as has_teas6_0_0_, movie0_.title as title7_0_0_ from movie movie0_ where movie0_.id=?
+2021-03-23 11:13:27.882 TRACE 4048 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-03-23 11:13:27.891  INFO 4048 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 11:13:27.894  INFO 4048 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-23 11:13:27.899  INFO 4048 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-23 11:27:54.744  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Starting MoviecruiserApplication using Java 15.0.1 on DESKTOP-43RH9JJ with PID 18160 (G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser\target\classes started by rajag in G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser)
+2021-03-23 11:27:54.746 DEBUG 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-23 11:27:54.746  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : No active profile set, falling back to default profiles: default
+2021-03-23 11:27:54.781  INFO 18160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-23 11:27:55.048  INFO 18160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-23 11:27:55.080  INFO 18160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2021-03-23 11:27:55.312  INFO 18160 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-23 11:27:55.347  INFO 18160 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-23 11:27:55.434  INFO 18160 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-23 11:27:55.505  INFO 18160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-23 11:27:55.644  INFO 18160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-23 11:27:55.655  INFO 18160 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-03-23 11:27:56.038  INFO 18160 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-23 11:27:56.044  INFO 18160 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 11:27:56.066  INFO 18160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-23 11:27:56.329  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Started MoviecruiserApplication in 1.82 seconds (JVM running for 2.403)
+2021-03-23 11:27:56.331  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Inside main
+2021-03-23 11:28:01.746  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 11:28:01.829 DEBUG 18160 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_, movie0_.active as active2_0_, movie0_.box_office as box_offi3_0_, movie0_.date_of_launch as date_of_4_0_, movie0_.genre as genre5_0_, movie0_.has_teaser as has_teas6_0_, movie0_.title as title7_0_ from movie movie0_
+2021-03-23 11:28:01.834 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [1]
+2021-03-23 11:28:01.838 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:28:01.838 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_] : [VARCHAR]) - [$514,512,900]
+2021-03-23 11:28:01.839 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 11:28:01.839 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 11:28:01.839 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:28:01.840 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 11:28:01.852  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 11:28:13.929  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 11:28:13.934 DEBUG 18160 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_0_, movie0_.active as active2_0_0_, movie0_.box_office as box_offi3_0_0_, movie0_.date_of_launch as date_of_4_0_0_, movie0_.genre as genre5_0_0_, movie0_.has_teaser as has_teas6_0_0_, movie0_.title as title7_0_0_ from movie movie0_ where movie0_.id=?
+2021-03-23 11:28:13.935 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-03-23 11:28:13.937 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:28:13.938 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_0_] : [VARCHAR]) - [$514,512,900]
+2021-03-23 11:28:13.938 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 11:28:13.938 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 11:28:13.938 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:28:13.938 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 11:28:13.940  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 11:28:21.319  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 11:28:21.327 DEBUG 18160 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_, movie0_.active as active2_0_, movie0_.box_office as box_offi3_0_, movie0_.date_of_launch as date_of_4_0_, movie0_.genre as genre5_0_, movie0_.has_teaser as has_teas6_0_, movie0_.title as title7_0_ from movie movie0_ where movie0_.active=1
+2021-03-23 11:28:21.328 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [1]
+2021-03-23 11:28:21.328 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:28:21.329 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_] : [VARCHAR]) - [$514,512,900]
+2021-03-23 11:28:21.329 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 11:28:21.329 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 11:28:21.329 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:28:21.329 TRACE 18160 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 11:28:21.331  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 11:41:40.710  INFO 18160 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 11:41:40.716  INFO 18160 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-23 11:41:40.724  INFO 18160 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-23 11:41:40.876  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Starting MoviecruiserApplication using Java 15.0.1 on DESKTOP-43RH9JJ with PID 18160 (G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser\target\classes started by rajag in G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser)
+2021-03-23 11:41:40.876 DEBUG 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-23 11:41:40.876  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : No active profile set, falling back to default profiles: default
+2021-03-23 11:41:40.942  INFO 18160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-23 11:41:40.947  INFO 18160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2021-03-23 11:41:40.980  INFO 18160 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-23 11:41:40.983  INFO 18160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-23 11:41:40.987  INFO 18160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-23 11:41:40.988  INFO 18160 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-03-23 11:41:41.007  INFO 18160 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-23 11:41:41.008  INFO 18160 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 11:41:41.015  INFO 18160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-23 11:41:41.070  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Started MoviecruiserApplication in 0.214 seconds (JVM running for 827.144)
+2021-03-23 11:41:41.071  INFO 18160 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-23 11:41:41.072  INFO 18160 --- [restartedMain] c.c.m.MoviecruiserApplication            : Inside main
+2021-03-23 11:41:41.520  INFO 18160 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-03-23 11:41:41.521  INFO 18160 --- [RMI TCP Connection(23)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 11:41:41.522  INFO 18160 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-23 11:41:41.525  INFO 18160 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-23 11:41:59.995  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : Starting MoviecruiserApplication using Java 15.0.1 on DESKTOP-43RH9JJ with PID 16728 (G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser\target\classes started by rajag in G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser)
+2021-03-23 11:41:59.996 DEBUG 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-23 11:41:59.997  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : No active profile set, falling back to default profiles: default
+2021-03-23 11:42:00.035  INFO 16728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-23 11:42:00.300  INFO 16728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-23 11:42:00.333  INFO 16728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2021-03-23 11:42:00.566  INFO 16728 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-23 11:42:00.598  INFO 16728 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-23 11:42:00.683  INFO 16728 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-23 11:42:00.752  INFO 16728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-23 11:42:00.881  INFO 16728 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-23 11:42:00.891  INFO 16728 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-03-23 11:42:01.266  INFO 16728 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-23 11:42:01.272  INFO 16728 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 11:42:01.293  INFO 16728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-23 11:42:01.551  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : Started MoviecruiserApplication in 1.778 seconds (JVM running for 2.353)
+2021-03-23 11:42:01.553  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : Inside main
+2021-03-23 11:42:10.162  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 11:42:10.246 DEBUG 16728 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_, movie0_.active as active2_0_, movie0_.box_office as box_offi3_0_, movie0_.date_of_launch as date_of_4_0_, movie0_.genre as genre5_0_, movie0_.has_teaser as has_teas6_0_, movie0_.title as title7_0_ from movie movie0_
+2021-03-23 11:42:10.251 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [1]
+2021-03-23 11:42:10.254 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:42:10.255 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_] : [VARCHAR]) - [$514,512,900]
+2021-03-23 11:42:10.256 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 11:42:10.256 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 11:42:10.257 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:42:10.257 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 11:42:10.257 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [2]
+2021-03-23 11:42:10.258 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:42:10.258 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_] : [VARCHAR]) - [$2,787,965,087]
+2021-03-23 11:42:10.258 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_] : [TIMESTAMP]) - [2015-03-17 00:00:00.0]
+2021-03-23 11:42:10.258 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_] : [VARCHAR]) - [Science fiction]
+2021-03-23 11:42:10.258 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:42:10.259 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_] : [VARCHAR]) - [Avtar]
+2021-03-23 11:42:10.271  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 11:42:36.804  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 11:42:36.811 DEBUG 16728 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_0_, movie0_.active as active2_0_0_, movie0_.box_office as box_offi3_0_0_, movie0_.date_of_launch as date_of_4_0_0_, movie0_.genre as genre5_0_0_, movie0_.has_teaser as has_teas6_0_0_, movie0_.title as title7_0_0_ from movie movie0_ where movie0_.id=?
+2021-03-23 11:42:36.812 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-03-23 11:42:36.816 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:42:36.816 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_0_] : [VARCHAR]) - [$514,512,900]
+2021-03-23 11:42:36.817 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 11:42:36.817 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 11:42:36.818 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:42:36.818 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 11:42:36.820  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 11:46:35.784  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 11:46:35.786 DEBUG 16728 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_0_, movie0_.active as active2_0_0_, movie0_.box_office as box_offi3_0_0_, movie0_.date_of_launch as date_of_4_0_0_, movie0_.genre as genre5_0_0_, movie0_.has_teaser as has_teas6_0_0_, movie0_.title as title7_0_0_ from movie movie0_ where movie0_.id=?
+2021-03-23 11:46:35.786 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-03-23 11:46:35.787 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:46:35.788 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_0_] : [VARCHAR]) - [$514,512,900]
+2021-03-23 11:46:35.788 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 11:46:35.788 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 11:46:35.788 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:46:35.788 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 11:46:35.790 DEBUG 16728 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_0_, movie0_.active as active2_0_0_, movie0_.box_office as box_offi3_0_0_, movie0_.date_of_launch as date_of_4_0_0_, movie0_.genre as genre5_0_0_, movie0_.has_teaser as has_teas6_0_0_, movie0_.title as title7_0_0_ from movie movie0_ where movie0_.id=?
+2021-03-23 11:46:35.790 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-03-23 11:46:35.791 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:46:35.791 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_0_] : [VARCHAR]) - [$514,512,900]
+2021-03-23 11:46:35.792 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 11:46:35.792 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 11:46:35.792 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:46:35.792 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 11:46:35.799 DEBUG 16728 --- [restartedMain] org.hibernate.SQL                        : update movie set active=?, box_office=?, date_of_launch=?, genre=?, has_teaser=?, title=? where id=?
+2021-03-23 11:46:35.800 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BOOLEAN] - [true]
+2021-03-23 11:46:35.800 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [$2,514,512,900]
+2021-03-23 11:46:35.801 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [TIMESTAMP] - [2022-09-15 00:00:00.0]
+2021-03-23 11:46:35.801 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Superhero]
+2021-03-23 11:46:35.801 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BOOLEAN] - [true]
+2021-03-23 11:46:35.801 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [VARCHAR] - [Avengers: Infinity War]
+2021-03-23 11:46:35.802 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [1]
+2021-03-23 11:46:35.811  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 11:46:41.547  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 11:46:41.548 DEBUG 16728 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_0_, movie0_.active as active2_0_0_, movie0_.box_office as box_offi3_0_0_, movie0_.date_of_launch as date_of_4_0_0_, movie0_.genre as genre5_0_0_, movie0_.has_teaser as has_teas6_0_0_, movie0_.title as title7_0_0_ from movie movie0_ where movie0_.id=?
+2021-03-23 11:46:41.548 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-03-23 11:46:41.550 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:46:41.550 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_0_] : [VARCHAR]) - [$2,514,512,900]
+2021-03-23 11:46:41.550 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 11:46:41.550 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 11:46:41.551 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_0_] : [BOOLEAN]) - [true]
+2021-03-23 11:46:41.551 TRACE 16728 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 11:46:41.552  INFO 16728 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 11:51:40.683  INFO 16728 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-03-23 11:51:40.685  INFO 16728 --- [RMI TCP Connection(19)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 11:51:40.687  INFO 16728 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-23 11:51:40.694  INFO 16728 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-23 18:27:26.345  INFO 12056 --- [restartedMain] c.c.m.MoviecruiserApplication            : Starting MoviecruiserApplication using Java 15.0.1 on DESKTOP-43RH9JJ with PID 12056 (G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser\target\classes started by rajag in G:\EE\CODES\IMP IMP\Stage3-main\Spring Data JPA\885135\Final Check\moviecruiser)
+2021-03-23 18:27:26.358 DEBUG 12056 --- [restartedMain] c.c.m.MoviecruiserApplication            : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-23 18:27:26.358  INFO 12056 --- [restartedMain] c.c.m.MoviecruiserApplication            : No active profile set, falling back to default profiles: default
+2021-03-23 18:27:26.399  INFO 12056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-23 18:27:26.676  INFO 12056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-23 18:27:26.708  INFO 12056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2021-03-23 18:27:26.968  INFO 12056 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-23 18:27:27.001  INFO 12056 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-23 18:27:27.097  INFO 12056 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-23 18:27:27.172  INFO 12056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-23 18:27:27.324  INFO 12056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-23 18:27:27.336  INFO 12056 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-03-23 18:27:27.786  INFO 12056 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-23 18:27:27.792  INFO 12056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 18:27:27.816  INFO 12056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-23 18:27:28.109  INFO 12056 --- [restartedMain] c.c.m.MoviecruiserApplication            : Started MoviecruiserApplication in 2.014 seconds (JVM running for 2.605)
+2021-03-23 18:27:28.111  INFO 12056 --- [restartedMain] c.c.m.MoviecruiserApplication            : Inside main
+2021-03-23 18:27:34.229  INFO 12056 --- [restartedMain] c.c.m.MoviecruiserApplication            : Start
+2021-03-23 18:27:34.309 DEBUG 12056 --- [restartedMain] org.hibernate.SQL                        : select movie0_.id as id1_0_, movie0_.active as active2_0_, movie0_.box_office as box_offi3_0_, movie0_.date_of_launch as date_of_4_0_, movie0_.genre as genre5_0_, movie0_.has_teaser as has_teas6_0_, movie0_.title as title7_0_ from movie movie0_
+2021-03-23 18:27:34.321 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [1]
+2021-03-23 18:27:34.324 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_] : [BOOLEAN]) - [true]
+2021-03-23 18:27:34.325 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_] : [VARCHAR]) - [$2,514,512,900]
+2021-03-23 18:27:34.325 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_] : [TIMESTAMP]) - [2022-09-15 00:00:00.0]
+2021-03-23 18:27:34.326 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_] : [VARCHAR]) - [Superhero]
+2021-03-23 18:27:34.326 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_] : [BOOLEAN]) - [true]
+2021-03-23 18:27:34.326 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_] : [VARCHAR]) - [Avengers: Infinity War]
+2021-03-23 18:27:34.327 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [2]
+2021-03-23 18:27:34.327 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([active2_0_] : [BOOLEAN]) - [true]
+2021-03-23 18:27:34.327 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([box_offi3_0_] : [VARCHAR]) - [$2,787,965,087]
+2021-03-23 18:27:34.327 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date_of_4_0_] : [TIMESTAMP]) - [2015-03-17 00:00:00.0]
+2021-03-23 18:27:34.328 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([genre5_0_] : [VARCHAR]) - [Science fiction]
+2021-03-23 18:27:34.328 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([has_teas6_0_] : [BOOLEAN]) - [true]
+2021-03-23 18:27:34.328 TRACE 12056 --- [restartedMain] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([title7_0_] : [VARCHAR]) - [Avtar]
+2021-03-23 18:27:34.341  INFO 12056 --- [restartedMain] c.c.m.MoviecruiserApplication            : End
+2021-03-23 18:27:40.317  INFO 12056 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-03-23 18:27:40.318  INFO 12056 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-23 18:27:40.320  INFO 12056 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-23 18:27:40.326  INFO 12056 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
